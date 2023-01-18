@@ -1,3 +1,14 @@
-@import "./base/_generales.scss";
-@import "./components/_header.scss";
-@import "./components/_main.scss";
+@import "./base/generales";
+@import "./base/variables";
+
+@import "./components/header";
+@import "./components/main";
+
+@import "./pages/galeria";
+@import "./pages/contacto";
+@import "./pages/noticias";
+@import "./pages/sobre-nosotros";
+
+@import "./components/footer";
+
+@import "./base/mediaquery"

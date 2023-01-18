@@ -77,6 +77,13 @@
                     text-align: center;
                     font-weight: 600;
                 }
+                .sedesMaps{
+                    margin-top: 25px;
+                    iframe{
+                        width: 250px;
+                        height: 160px;
+                    }
+                }
             }
             .sedeLatabla{
                 display: flex;
@@ -87,6 +94,13 @@
                     color: gold;
                     text-align: center;
                     font-weight: 600;
+                }
+                .sedesMaps{
+                    margin-top: 25px;
+                    iframe{
+                        width: 250px;
+                        height: 160px;
+                    }
                 }
             }
         }

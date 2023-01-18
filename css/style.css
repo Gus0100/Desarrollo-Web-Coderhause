@@ -1,6 +1,6 @@
 @font-face {
     font-family: "JanuariB";
-    src: url(../css/Januari\ Blossom.otf);
+    src: url(./januari-blossom.otf);
 }
 
 * {
@@ -227,7 +227,7 @@ header h1 {
     gap: 20px;
 }
 
-.galeriaContainer .galeriaFotos .gridItem, .ultimo {
+.galeriaContainer .galeriaFotos .gridItem{
     transition: 1s;
 }
 

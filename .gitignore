@@ -1,5 +1,4 @@
 node_modules/
 .vscode/
 wireframe/
-package-lock.json
-package.json
+*.json
