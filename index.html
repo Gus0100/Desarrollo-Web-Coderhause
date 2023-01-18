@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PatínSolar</title>
-    <link rel="stylesheet" href="./styles/estilos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="keywords" content="patin, patinaje, artistico, club, nenas, sobre, ruedas, clases">
+    <meta name="description" content="">
+    <title>PatínSolar │ </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/icono-index.ico">
 </head>
+
 <body>
     <header>
-        <a href="./index.html"><button><h1>Patín SolAr</h1></button></a>
+        <a href="./index.html"><button>
+                <h1>Patín SolAr</h1>
+            </button></a>
         <nav>
             <ul class="listLinks">
                 <li><a href="./index.html"><button class="buttonHeader">Home</button></a></li>
@@ -23,60 +31,58 @@
     </header>
     <main>
         <!------------------------- Animate a patinar ------------------------>
-        <section class="carrusel">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./img/1.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Inscribirse</h5>
-                            <p>Completa tus datos en este formulario</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/2.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Noticias</h5>
-                            <p>No te pierdas ninguna novedad de nuestra Escuela de Patín</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/3.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Sobre Nosotros</h5>
-                            <p>Mi trayectoria en el Patín Artístico</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-        </section>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/patinesCarrusel1.jpg" class="d-block w-100 subirImg" alt="...">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <p class="carruselParrafo">Completa tus datos en este formulario</p>
+                        <a href="./pages/contacto.html" class="btn btn-info">Inscribirme</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/patinesCarrusel2.jpg" class="d-block w-100 subirImg" alt="...">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <p class="carruselParrafo">No te pierdas ninguna novedad de nuestra Escuela de Patín</p>
+                        <a href="./pages/noticias.html" class="btn btn-info">Noticias</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/patinesCarrusel3.jpg" class="d-block w-100 subirImg" alt="...">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <p class="carruselParrafo">Mi trayectoria en el Patín Artístico</p>
+                        <a href="./pages/sobre_nosotros.html" class="btn btn-info">Sobre Nosotros</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <!------------------------- Por que patín? ---------------------------->
         <section class="porQuePatin">
             <h3 class="tituloh3">¿Por qué Patín artístico?</h3>
             <div class="listDeArriba">
                 <div class="list1">
-                    <ul>
-                        <li>Mejora la elasticidad</li>
-                        <li>Estimula el ejercicio físico a través del juego</li>
-                        <li>Fortalece los músculos y favorece el crecimiento de los huesos fuertes</li>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item-bg-transparent">Mejora la elasticidad</li>
+                        <li class="list-group-item-bg-transparent">Estimula el ejercicio físico a través del juego</li>
+                        <li class="list-group-item-bg-transparent">Fortalece los músculos y favorece el crecimiento de los huesos fuertes</li>
                     </ul>
                 </div>
                 <div>
@@ -85,10 +91,10 @@
             </div>
             <div class="listDeAbajo">
                 <div class="list2">
-                    <ul>
-                        <li>Desarrolla el equilibrio</li>
-                        <li>Mejora la resistencia física</li>
-                        <li>Activa la circulación sanguínea</li>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item-bg-transparent">Desarrolla el equilibrio</li>
+                        <li class="list-group-item-bg-transparent">Estimula el ejercicio físico a través del juego</li>
+                        <li class="list-group-item-bg-transparent">Fortalece los músculos y favorece el crecimiento de los huesos fuertes</li>
                     </ul>
                 </div>
                 <div>
@@ -119,12 +125,15 @@
             </div>
         </section>
     </main>
+    <!-------------------- FOOTER ------------------>
     <footer class="footerContainer">
         <div class="redesSociales">
             <h3 class="redesSocialestitulo">Mis Redes Sociales:</h3>
             <div>
-                <a href="https://www.instagram.com/patinsolar/ "><img src="./img/instagram.png" alt="iconInstagram" class="icon"></a>
-                <a href="https://www.facebook.com/patin.solar.9"><img src="./img/facebook.png" alt="iconFacebook" class="icon"></a>
+                <a href="https://www.instagram.com/patinsolar/ "><img src="./img/instagram.png" alt="iconInstagram"
+                        class="icon"></a>
+                <a href="https://www.facebook.com/patin.solar.9"><img src="./img/facebook.png" alt="iconFacebook"
+                        class="icon"></a>
                 <a href="https://wa.me/5491156308344"><img src="./img/whatsapp.png" alt="iconWhatsapp" class="icon"></a>
             </div>
         </div>
@@ -134,18 +143,27 @@
                 <div class="sedeLafe">
                     <h5 class="sedeSubtitulo">Gregorio De Laferrere</h5>
                     <div class="sedesMaps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5518.50549705679!2d-58.50825536740555!3d-34.67179658060608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc91e2af92897%3A0x10e2228d14dcd101!2sSociedad%20de%20Fomento%20Villa%20Insuperable!5e0!3m2!1ses!2sar!4v1671573708271!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5518.50549705679!2d-58.50825536740555!3d-34.67179658060608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc91e2af92897%3A0x10e2228d14dcd101!2sSociedad%20de%20Fomento%20Villa%20Insuperable!5e0!3m2!1ses!2sar!4v1671573708271!5m2!1ses!2sar"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="sedeLatabla">
                     <h5 class="sedeSubtitulo">La Tablada</h5>
                     <div class="sedesMaps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4504.775288561098!2d-58.60825027427759!3d-34.73807603372239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc436e8684b4b%3A0x42f686e372ba2e81!2sSociedad%20De%20Fomento%20Y%20Club%20%22Villa%20Uni%C3%B3n%22!5e0!3m2!1ses!2sar!4v1671575804777!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4504.775288561098!2d-58.60825027427759!3d-34.73807603372239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc436e8684b4b%3A0x42f686e372ba2e81!2sSociedad%20De%20Fomento%20Y%20Club%20%22Villa%20Uni%C3%B3n%22!5e0!3m2!1ses!2sar!4v1671575804777!5m2!1ses!2sar"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

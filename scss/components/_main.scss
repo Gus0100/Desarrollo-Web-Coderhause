@@ -1,0 +1,119 @@
+/*--------------------MAIN----------------------*/
+/*HERO*/
+
+.subirImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carruselParrafo{
+    font-family: januariB;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #000000;
+    font-size: 40px;
+}
+
+/* SECTION POR QUE PATÍN*/
+
+.porQuePatin{
+    background-image: url(../img/layered-waves-haikei.svg);
+    background-size: cover;
+    .tituloh3{
+        text-align: center;
+        font-size: 3em;
+        font-family: JanuariB;
+        letter-spacing: 8px;
+        padding: 30px;
+        color: gold;
+    }
+    .listaDeArriba{
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        .list1{
+            ul{
+                margin: 20px;
+                border: solid 4px;
+                border-radius: 2em;
+                padding: 30px;
+                list-style-type: disclosure-closed;
+                li{
+                    line-height: 300%;
+                    font-size: 130%;
+                    color: gold;
+                }
+            }
+        }
+    }
+    .listaDeAbajo{
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        .list2{
+            ul{
+                margin: 20px;
+                border: solid 4px;
+                border-radius: 2em;
+                padding: 30px;
+                list-style-type: disclosure-closed;
+                li{
+                    line-height: 300%;
+                    font-size: 130%;
+                    color: gold;
+                }
+            }
+        }
+    }
+}
+
+/* MAMAS FELICES*/
+
+.mamasFelices{
+    background-image: url(../img/muchas-estrellas.svg);
+    background-size: cover;
+    .mamasFelicesh3{
+        color: gold;
+        font-size: 3em;
+        font-family: JanuariB;
+        letter-spacing: 8px;
+        padding: 30px;
+        text-align: center;
+    }
+    .lisdosMensajes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        div{
+            width: 300px;
+            height: 450px;
+            margin: 30px;
+            border-radius: 20px;
+            background: #08070c;
+            box-shadow: 0 8px 32px 0 #FCF6BD;
+            border: 1px solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            p{
+                color: #FF99C8;
+                font-family: georgia, serif;
+                font-size: 20px;
+                font-style: italic;
+                text-align: center;
+                letter-spacing: 1.8pt;
+                word-spacing: 2pt;
+                padding: 6px;
+                border-radius: 25px;
+            }
+        }
+    }
+}
