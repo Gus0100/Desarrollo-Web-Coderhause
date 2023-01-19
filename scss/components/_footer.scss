@@ -3,39 +3,35 @@
 .footerContainer{
     width: 100%;
     height: 100%;
-    color: white;
+    color: nth($colores , 2);
     background-image: url(../img/confetti-doodles.svg);
     display: grid;
     grid-template-columns: 1.5fr 2fr;
     gap: 20px;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     align-items: center;
+    flex-wrap: wrap;
     padding: 20px;
     .redesSociales{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
         height: 100%;
         margin-left: 20px;
         .redesSocialestitulo{
-            color: gold;
-            text-align: center;
+            color: nth($colores , 4);
+            text-align: $centrar-txt;
             font-weight: 600;
             font-size: 24px;
             font-family: Arial, Helvetica, sans-serif;
             letter-spacing: 6px;
-            text-align: center;
         }
         div{
             margin-top: 40px;
             display: flex;
+            align-items: center;
             justify-content: space-between;
             .icon{
-                background-color: white;
+                background-color: nth($colores , 2);
                 height: 50px;
                 width: 50px;
                 border-radius: 100px;
@@ -48,33 +44,27 @@
         }
     }
     .sedes{
-        text-align: center;
+        text-align: $centrar-txt;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
         letter-spacing: 6px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @extend %flex;
         .sedesTitulo{
-            color: gold;
-            text-align: center;
+            color: nth($colores , 4);
+            text-align: $centrar-txt;
             font-weight: 600;
         }
         .sedesClubes{
             display: grid;
-            text-align: center;
+            text-align: $centrar-txt;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
             margin: 20px;
             .sedeLafe{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
+                @extend %flex;
                 .sedeSubtitulo{
-                    color: gold;
-                    text-align: center;
+                    color: nth($colores , 4);
+                    text-align: $centrar-txt;
                     font-weight: 600;
                 }
                 .sedesMaps{
@@ -86,13 +76,10 @@
                 }
             }
             .sedeLatabla{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
+                @extend %flex;
                 .sedeSubtitulo{
-                    color: gold;
-                    text-align: center;
+                    color: nth($colores , 4);
+                    text-align: $centrar-txt;
                     font-weight: 600;
                 }
                 .sedesMaps{

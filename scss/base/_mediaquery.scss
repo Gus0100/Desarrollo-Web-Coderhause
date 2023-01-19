@@ -29,14 +29,8 @@
 }
 
 @media screen and (max-width:979px) {
-    header{
-        a{
-            button{
-                h1{
-                    margin: 0 20px 0px 20px;
-                }
-            }
-        }
+    .tituloPrincipal{
+        margin: 0 20px 0px 20px;
     }
 }
 
@@ -46,5 +40,45 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        nav{
+            .listLinks{
+                margin-top: 5px;
+                margin-bottom: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                li{
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    .galeriaContainer{
+        .galeriaFotos{
+            display: grid;
+            grid-template-columns: 1fr;
+            .ultimoGrid{
+                grid-column: span 1;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:580px) {
+    .footerContainer{
+        .sedes{
+            .sedesClubes{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
     }
 }

@@ -1,0 +1,18 @@
+/*VARIABLES*/
+
+$centrar-txt: center;
+
+$colores:
+black,
+white,
+#212121,
+gold,
+fuchsia,
+pink;
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

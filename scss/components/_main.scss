@@ -3,7 +3,7 @@
 
 .subirImg{
     width: 100%;
-    height: 100%;
+    height: 94vh;
     object-fit: cover;
 }
 
@@ -11,7 +11,7 @@
     font-family: januariB;
     font-weight: 700;
     letter-spacing: 4px;
-    color: #000000;
+    color: nth($colores , 1);
     font-size: 40px;
 }
 
@@ -21,12 +21,12 @@
     background-image: url(../img/layered-waves-haikei.svg);
     background-size: cover;
     .tituloh3{
-        text-align: center;
+        text-align: $centrar-txt;
         font-size: 3em;
         font-family: JanuariB;
         letter-spacing: 8px;
         padding: 30px;
-        color: gold;
+        color: nth($colores , 4);
     }
     .listaDeArriba{
         padding: 30px;
@@ -35,17 +35,17 @@
         align-items: center;
         flex-direction: row-reverse;
         flex-wrap: wrap;
-        .list1{
-            ul{
+        .lista1{
+            .listaGrupo{
                 margin: 20px;
                 border: solid 4px;
                 border-radius: 2em;
                 padding: 30px;
                 list-style-type: disclosure-closed;
-                li{
-                    line-height: 300%;
+                .beneficios{
+                    line-height: 250%;
                     font-size: 130%;
-                    color: gold;
+                    color: nth($colores , 4);
                 }
             }
         }
@@ -56,17 +56,17 @@
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        .list2{
-            ul{
+        .lista2{
+            .listaGrupo{
                 margin: 20px;
                 border: solid 4px;
                 border-radius: 2em;
                 padding: 30px;
                 list-style-type: disclosure-closed;
-                li{
-                    line-height: 300%;
+                .beneficios{
+                    line-height: 250%;
                     font-size: 130%;
-                    color: gold;
+                    color: nth($colores , 4);
                 }
             }
         }
@@ -79,18 +79,18 @@
     background-image: url(../img/muchas-estrellas.svg);
     background-size: cover;
     .mamasFelicesh3{
-        color: gold;
+        color: nth($colores , 4);
         font-size: 3em;
         font-family: JanuariB;
         letter-spacing: 8px;
         padding: 30px;
-        text-align: center;
+        text-align: $centrar-txt;
     }
-    .lisdosMensajes{
+    .lindosMensajes{
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         div{
             width: 300px;
             height: 450px;
@@ -104,11 +104,11 @@
             justify-content: space-evenly;
             align-items: center;
             p{
-                color: #FF99C8;
+                color: pink;
                 font-family: georgia, serif;
                 font-size: 20px;
                 font-style: italic;
-                text-align: center;
+                text-align: $centrar-txt;
                 letter-spacing: 1.8pt;
                 word-spacing: 2pt;
                 padding: 6px;

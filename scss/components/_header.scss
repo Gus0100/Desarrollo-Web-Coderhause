@@ -1,29 +1,31 @@
 /*--------------------HEADER---------------------- */
 
 header {
-    background-color: #212121;
+    background-color: nth($colores , 3);
     position: sticky;
     z-index: 3;
     top: 0;
-    text-align: center;
+    text-align: $centrar-txt;
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     a {
         button {
-            background-color: #212121;
+            background-color: nth($colores , 3);
             border: none;
             h1 {
+                text-align: $centrar-txt;
                 font-size: 3rem;
-                color: #FFFFFF;
+                color: nth($colores , 2);
                 text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
                 font-style: italic;
                 font-family: JanuariB;
+                margin: 0 20px 10px 20px;
                 letter-spacing: 6px;
+                display: flex;
                 justify-content: center;
                 align-items: center;
-                margin: 0 20px 10px 20px;
             }
         }
     }
@@ -32,11 +34,11 @@ header {
             padding-left: 0;
             margin-top: 10px;
             list-style: none;
-            text-align: center;
+            text-align: $centrar-txt;
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
             li {
                 margin-left: 20px;
                 margin-right: 20px;
@@ -45,10 +47,10 @@ header {
                         font-weight: bold;
                         letter-spacing: 0.2em;
                         border: none;
-                        background-color: #212121;
-                        color: gold;
+                        background-color: nth($colores , 3);
+                        color: nth($colores , 4);
                         &:hover{
-                            color: fuchsia;
+                            color: nth($colores , 5);
                         }
                     }
                 }

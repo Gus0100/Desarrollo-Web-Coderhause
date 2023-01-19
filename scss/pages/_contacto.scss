@@ -8,9 +8,9 @@
     align-items: center;
     background: linear-gradient(0deg, rgba(255, 252, 0, 1) 0%, rgba(255, 158, 0, 1) 50%, rgba(255, 0, 0, 1) 100%);
     .formulario{
-        border: solid 8px rgb(246, 149, 255);
+        border: solid 8px nth($colores , 6);
         border-radius: 20px;
         padding: 40px;
-        background-color: blanchedalmond;
+        background-color: nth($colores , 2);
     }
 }
