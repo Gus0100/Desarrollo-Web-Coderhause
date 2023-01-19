@@ -34,6 +34,22 @@
     }
 }
 
+@media screen and (max-width:807px){
+    .sobreMi{
+        height: auto;
+    }
+}
+
+@media screen and (max-width:767px){
+    .ultimasNoticias{
+        height: auto;
+    }
+
+    .formularioContainer{
+        height: auto;
+    }
+}
+
 @media screen and (max-width:709px) {
     header{
         display: flex;
