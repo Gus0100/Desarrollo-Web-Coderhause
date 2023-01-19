@@ -15,10 +15,7 @@
     }
     .sobreMiConteiner{
         padding: 35px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
+        @include flex (flex, space-around, center, row, wrap);
         .sobreMiFoto{
             margin: 20px;
             img{

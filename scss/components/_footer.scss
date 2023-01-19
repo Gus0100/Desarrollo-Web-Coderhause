@@ -8,10 +8,7 @@
     display: grid;
     grid-template-columns: 1.5fr 2fr;
     gap: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    @include flex (flex, space-around, center, row, wrap);
     padding: 20px;
     .redesSociales{
         @extend %flex;
@@ -27,9 +24,7 @@
         }
         div{
             margin-top: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @include flex (flex, space-between, center, row, wrap);
             .icon{
                 background-color: nth($colores , 2);
                 height: 50px;

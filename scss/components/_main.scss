@@ -30,11 +30,7 @@
     }
     .listaDeArriba{
         padding: 30px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
+        @include flex (flex, space-around, center, row-reverse, wrap);
         .lista1{
             .listaGrupo{
                 margin: 20px;
@@ -52,10 +48,7 @@
     }
     .listaDeAbajo{
         padding: 30px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
+        @include flex (flex, space-around, center, row, wrap);
         .lista2{
             .listaGrupo{
                 margin: 20px;
@@ -87,10 +80,7 @@
         text-align: $centrar-txt;
     }
     .lindosMensajes{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+        @include flex (flex, center, center, row, wrap);
         div{
             width: 300px;
             height: 450px;
@@ -99,10 +89,7 @@
             background: #08070c;
             box-shadow: 0 8px 32px 0 #FCF6BD;
             border: 1px solid;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
+            @include flex (flex, space-evenly, center, column, wrap);
             p{
                 color: pink;
                 font-family: georgia, serif;

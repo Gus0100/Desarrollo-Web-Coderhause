@@ -16,3 +16,11 @@ pink;
     align-items: center;
     flex-direction: column;
 }
+
+@mixin flex($flex, $justifi, $align, $direction, $wrap){
+    display: $flex;
+    justify-content: $justifi;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
