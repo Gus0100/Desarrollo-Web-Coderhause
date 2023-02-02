@@ -17,23 +17,27 @@
 
 <body>
     <header>
-        <a href="../index.html"><button>
-                <h1>Patín SolAr</h1>
-            </button></a>
-        <nav>
-            <ul class="listLinks">
-                <li><a href="../index.html"><button class="buttonHeader">Home</button></a></li>
-                <li><a href="./noticias.html"><button class="buttonHeader">Noticias</button></a></li>
-                <li><a href="./galeria.html"><button class="buttonHeader">Galería</button></a></li>
-                <li><a href="./sobre_mi.html"><button class="buttonHeader">Sobre Mi</button></a></li>
-                <li><a href="./contacto.html"><button class="buttonHeader">Contáctenos</button></a></li>
-            </ul>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+            <div class="container">
+                <a href="../index.html" class="navbar-brand tituloPrincipal">Patín SolAr</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-row-reverse conteinerLinks" id="menu">
+                    <ul class="navbar-nav listLinks">
+                        <li class="nav-item"><a href="./noticias.html" class="nav-link links">Noticias</a></li>
+                        <li class="nav-item"><a href="./galeria.html" class="nav-link links">Galeria</a></li>
+                        <li class="nav-item"><a href="./sobre_mi.html" class="nav-link links">Sobre Mi</a></li>
+                        <li class="nav-item"><a href="./contacto.html" class="nav-link links">Contactenos</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <div class="ultimasNoticias">
         <h2>Ultimas Noticias</h2>
         <div class="row justify-content-around cardsNoticias">
-            <div class="card lg-6 bg-info cards" style="max-width: 540px;">
+            <div class="card lg-6 bg-info cards">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src="../img/Captura 3.JPG" class="img-thumbnail rounded-start" alt="bandera">
@@ -41,13 +45,14 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">Nueva Bandera</h5>
-                            <p class="card-text">Muy pronto la Escuela de PatinSolar tendra una bandera para que mas chicos se unan a este hermoso deporte.</p>
+                            <p class="card-text">Muy pronto la Escuela de PatinSolar tendra una bandera para que mas
+                                chicos se unan a este hermoso deporte.</p>
                             <p class="card-text"><small class="text-muted">Última actualización hace 6 dias</small></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card lg-6 bg-info cards" style="max-width: 540px;">
+            <div class="card lg-6 bg-info cards">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src="../img/mayas.jpg" class="img-thumbnail rounded-start" alt="alumnas con mayas">
@@ -55,7 +60,8 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">Nueva Maya</h5>
-                            <p class="card-text">Las alumnas ya estan disfrutando de la nueva maya de la Escuela de PatinSolar y tuvieron la oportunidad de usarla en un capeonato.</p>
+                            <p class="card-text">Las alumnas ya estan disfrutando de la nueva maya de la Escuela de
+                                PatinSolar y tuvieron la oportunidad de usarla en un capeonato.</p>
                             <p class="card-text"><small class="text-muted">Última actualización hace 6 meses</small></p>
                         </div>
                     </div>

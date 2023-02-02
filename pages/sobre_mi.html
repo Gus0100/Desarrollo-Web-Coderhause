@@ -13,15 +13,21 @@
 </head>
 <body>
     <header>
-        <a href="../index.html"><button><h1>Patín SolAr</h1></button></a>
-        <nav>
-            <ul class="listLinks">
-                <li><a href="../index.html"><button class="buttonHeader">Home</button></a></li>
-                <li><a href="./noticias.html"><button class="buttonHeader">Noticias</button></a></li>
-                <li><a href="./galeria.html"><button class="buttonHeader">Galería</button></a></li>
-                <li><a href="./sobre_mi.html"><button class="buttonHeader">Sobre Mi</button></a></li>
-                <li><a href="./contacto.html"><button class="buttonHeader">Contáctenos</button></a></li>
-            </ul>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+            <div class="container">
+                <a href="../index.html" class="navbar-brand tituloPrincipal">Patín SolAr</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-row-reverse conteinerLinks" id="menu">
+                    <ul class="navbar-nav listLinks">
+                        <li class="nav-item"><a href="./noticias.html" class="nav-link links">Noticias</a></li>
+                        <li class="nav-item"><a href="./galeria.html" class="nav-link links">Galeria</a></li>
+                        <li class="nav-item"><a href="./sobre_mi.html" class="nav-link links">Sobre Mi</a></li>
+                        <li class="nav-item"><a href="./contacto.html" class="nav-link links">Contactenos</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <div class="sobreMi">

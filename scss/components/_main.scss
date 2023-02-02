@@ -90,6 +90,11 @@
             box-shadow: 0 8px 32px 0 #FCF6BD;
             border: 1px solid;
             @include flex (flex, space-evenly, center, column, wrap);
+            transition: .5s, color .10s;
+            &:hover {
+                box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+                transform: translate(0px,5px);
+            }
             p{
                 color: pink;
                 font-family: georgia, serif;
