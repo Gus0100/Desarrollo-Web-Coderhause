@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-dark bg-dark navbar-expand-md headerNav">
             <div class="container">
-                <a href="./index.html" class="navbar-brand tituloPrincipal">Patín SolAr</a>
+                <a href="./index.html" class="navbar-brand tituloPrincipalNav">Patín SolAr</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,6 +34,10 @@
     </header>
     <main>
         <!------------------------- Animate a patinar ------------------------>
+        <div class="container animateAPatinar">
+            <h1 class="tituloPrincipal">Patin SolAr</h1>
+            <h4 class="tituloH4">Escuela de Patinaje Artistico</h4>
+        </div>
         <div class="container">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -45,23 +49,23 @@
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active carruselConteiner">
                         <img src="./img/patinesCarrusel1.jpg" class="d-block w-100 subirImg" alt="...">
-                        <div class="carousel-caption d-none d-sm-block">
+                        <div class="carousel-caption d-sm-block">
                             <p class="carruselParrafo">Completa tus datos en este formulario</p>
                             <a href="./pages/contacto.html" class="btn btn-info">Inscribirme</a>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item carruselConteiner">
                         <img src="./img/patinesCarrusel2.jpg" class="d-block w-100 subirImg" alt="...">
-                        <div class="carousel-caption d-none d-sm-block">
+                        <div class="carousel-caption d-sm-block">
                             <p class="carruselParrafo">No te pierdas ninguna novedad de nuestra Escuela de Patín</p>
                             <a href="./pages/noticias.html" class="btn btn-info">Noticias</a>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item carruselConteiner">
                         <img src="./img/patinesCarrusel3.jpg" class="d-block w-100 subirImg" alt="...">
-                        <div class="carousel-caption d-none d-sm-block">
+                        <div class="carousel-caption d-sm-block">
                             <p class="carruselParrafo">Mi trayectoria en el Patín Artístico</p>
                             <a href="./pages/sobre_nosotros.html" class="btn btn-info">Sobre Nosotros</a>
                         </div>
@@ -82,29 +86,31 @@
         <!------------------------- Por que patín? ---------------------------->
         <section class="porQuePatin">
             <h3 class="tituloh3">¿Por qué Patín artístico?</h3>
-            <div class="conteinerList">
-                <div class="listaDeArriba">
-                    <div class="lista1">
-                        <ul class="list-group list-group-flush listaGrupo">
-                            <li class="list-group-item-bg-transparen beneficios">Mejora la elasticidad</li>
-                            <li class="list-group-item-bg-transparent beneficios">Estimula el ejercicio físico a través del juego</li>
-                            <li class="list-group-item-bg-transparent beneficios">Fortalece los músculos y favorece el crecimiento de los huesos fuertes</li>
-                        </ul>
+            <div class="container">
+                <div class="conteinerList">
+                    <div class="listaDeArriba">
+                        <div class="lista1">
+                            <ul class="list-group list-group-flush listaGrupo">
+                                <li class="list-group-item-bg-transparen beneficios">Mejora la elasticidad</li>
+                                <li class="list-group-item-bg-transparent beneficios">Estimula el ejercicio físico a través del juego</li>
+                                <li class="list-group-item-bg-transparent beneficios">Fortalece los músculos y favorece el crecimiento de los huesos fuertes</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="./img/4.jpg" alt="imagenporque1">
+                        </div>
                     </div>
-                    <div>
-                        <img src="./img/4.jpg" alt="imagenporque1">
-                    </div>
-                </div>
-                <div class="listaDeAbajo">
-                    <div class="lista2">
-                        <ul class="list-group list-group-flush listaGrupo">
-                            <li class="list-group-item-bg-transparent beneficios">Desarrolla el equilibrio</li>
-                            <li class="list-group-item-bg-transparent beneficios">Desarrolla la concentración en el aprendizaje</li>
-                            <li class="list-group-item-bg-transparent beneficios">Mejora la resistencia física</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <img src="./img/5.jpg" alt="imagenporque2">
+                    <div class="listaDeAbajo">
+                        <div class="lista2">
+                            <ul class="list-group list-group-flush listaGrupo">
+                                <li class="list-group-item-bg-transparent beneficios">Desarrolla el equilibrio</li>
+                                <li class="list-group-item-bg-transparent beneficios">Desarrolla la concentración en el aprendizaje</li>
+                                <li class="list-group-item-bg-transparent beneficios">Mejora la resistencia física</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="./img/5.jpg" alt="imagenporque2">
+                        </div>
                     </div>
                 </div>
             </div>

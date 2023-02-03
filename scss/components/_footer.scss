@@ -11,7 +11,7 @@
     @include flex (flex, space-around, center, row, wrap);
     padding: 20px;
     .redesSociales{
-        @extend %flex;
+        @include flex (flex, center, center, column, wrap);
         height: 100%;
         margin-left: 20px;
         .redesSocialestitulo{
@@ -43,7 +43,7 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
         letter-spacing: 6px;
-        @extend %flex;
+        @include flex (flex, center, center, column, wrap);
         .sedesTitulo{
             color: nth($colores , 4);
             text-align: $centrar-txt;
@@ -56,7 +56,7 @@
             gap: 20px;
             margin: 20px;
             .sedeLafe{
-                @extend %flex;
+                @include flex (flex, center, center, column, wrap);
                 .sedeSubtitulo{
                     color: nth($colores , 4);
                     text-align: $centrar-txt;
@@ -71,7 +71,7 @@
                 }
             }
             .sedeLatabla{
-                @extend %flex;
+                @include flex (flex, center, center, column, wrap);
                 .sedeSubtitulo{
                     color: nth($colores , 4);
                     text-align: $centrar-txt;

@@ -17,6 +17,19 @@
     }
 }
 
+@media screen and (max-width:1199px) {
+    .porQuePatin{
+        .conteinerList{
+            .listaDeArriba{
+                @include flex (flex, center, center, column, wrap);
+            }
+            .listaDeAbajo{
+                @include flex (flex, center, center, column, wrap);
+            }
+        }
+    }
+}
+
 @media screen and (max-width:1172px) {
     .footerContainer{
         width: 100%;
@@ -24,6 +37,7 @@
         @include flex (flex, center, center, column, wrap);
     }
 }
+
 
 @media screen and (max-width:807px){
     .cards{

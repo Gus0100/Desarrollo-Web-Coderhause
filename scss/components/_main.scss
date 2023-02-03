@@ -5,25 +5,52 @@ main{
     background-color: #F9C8FC;
 }
 
-.subirImg{
-    width: 100%;
-    height: 60vh;
-    border-radius: 2em;
-    object-fit: cover;
+.animateAPatinar{
+    .tituloPrincipal{
+        @extend %estilo-titulo;
+    }
+    .tituloH4{
+        color: #090909;
+        margin: 60px;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 0.5em;
+        background: #e8e8e8;
+        border: 1px solid #e8e8e8;
+        transition: all .3s;
+        box-shadow: 6px 6px 12px #c5c5c5,-6px -6px 12px #ffff;
+        text-align: $centrar-txt;
+        font-size: 3em;
+        font-family: JanuariB;
+        letter-spacing: 8px;
+        color: nth($colores , 4);
+    }
 }
 
-.carruselParrafo{
-    font-family: januariB;
-    font-weight: 700;
-    letter-spacing: 4px;
-    color: nth($colores , 4);
-    font-size: 40px;
+
+.carruselConteiner{
+    .subirImg{
+        width: 100%;
+        height: 60vh;
+        border-radius: 2em;
+        object-fit: cover;
+    }
+    div{
+        .carruselParrafo{
+            font-family: januariB;
+            font-weight: 700;
+            letter-spacing: 4px;
+            color: nth($colores , 4);
+            font-size: 40px;
+        }
+    }
 }
+
 
 /* SECTION POR QUE PATÍN*/
 
 .porQuePatin{
-    @extend %flex;
+    @include flex (flex, center, center, column, wrap);
     .tituloh3{
         color: #090909;
         margin: 60px;
@@ -41,10 +68,9 @@ main{
         color: nth($colores , 4);
     }
     .conteinerList{
-        width: 100%;
         .listaDeArriba{
             padding: 30px;
-            @include flex (flex, space-evenly, center, row-reverse, wrap);
+            @include flex (flex, space-between, center, row-reverse, wrap);
             .lista1{
                 .listaGrupo{
                     margin: 20px;
@@ -60,10 +86,15 @@ main{
                     }
                 }
             }
+            div{
+                img{
+                    border-radius: 2em;
+                }
+            }
         }
         .listaDeAbajo{
             padding: 30px;
-            @include flex (flex, space-evenly, center, row, wrap);
+            @include flex (flex, space-between, center, row, wrap);
             .lista2{
                 .listaGrupo{
                     margin: 20px;
@@ -79,6 +110,11 @@ main{
                     }
                 }
             }
+            div{
+                img{
+                    border-radius: 2em;
+                }
+            }
         }
     }
 }
@@ -86,7 +122,7 @@ main{
 /* MAMAS FELICES*/
 
 .mamasFelices{
-    @extend %flex;
+    @include flex (flex, center, center, column, wrap);
     .tituloh3{
         color: #090909;
         margin: 60px;
