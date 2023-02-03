@@ -1,9 +1,14 @@
 /*--------------------MAIN----------------------*/
 /*HERO*/
 
+main{
+    background-color: #F9C8FC;
+}
+
 .subirImg{
     width: 100%;
-    height: 94vh;
+    height: 60vh;
+    border-radius: 2em;
     object-fit: cover;
 }
 
@@ -11,55 +16,67 @@
     font-family: januariB;
     font-weight: 700;
     letter-spacing: 4px;
-    color: nth($colores , 1);
+    color: nth($colores , 4);
     font-size: 40px;
 }
 
 /* SECTION POR QUE PATÍN*/
 
 .porQuePatin{
-    background-image: url(../img/layered-waves-haikei.svg);
-    background-size: cover;
+    @extend %flex;
     .tituloh3{
+        color: #090909;
+        margin: 60px;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 0.5em;
+        background: #e8e8e8;
+        border: 1px solid #e8e8e8;
+        transition: all .3s;
+        box-shadow: 6px 6px 12px #c5c5c5,-6px -6px 12px #ffff;
         text-align: $centrar-txt;
         font-size: 3em;
         font-family: JanuariB;
         letter-spacing: 8px;
-        padding: 30px;
         color: nth($colores , 4);
     }
-    .listaDeArriba{
-        padding: 30px;
-        @include flex (flex, space-around, center, row-reverse, wrap);
-        .lista1{
-            .listaGrupo{
-                margin: 20px;
-                border: solid 4px;
-                border-radius: 2em;
-                padding: 30px;
-                list-style-type: disclosure-closed;
-                .beneficios{
-                    line-height: 250%;
-                    font-size: 130%;
-                    color: nth($colores , 4);
+    .conteinerList{
+        width: 100%;
+        .listaDeArriba{
+            padding: 30px;
+            @include flex (flex, space-evenly, center, row-reverse, wrap);
+            .lista1{
+                .listaGrupo{
+                    margin: 20px;
+                    border: solid 4px;
+                    color: nth($colores , 1);
+                    border-radius: 2em;
+                    padding: 30px;
+                    list-style-type: disclosure-closed;
+                    .beneficios{
+                        line-height: 250%;
+                        font-size: 130%;
+                        color: nth($colores , 4);
+                    }
                 }
             }
         }
-    }
-    .listaDeAbajo{
-        padding: 30px;
-        @include flex (flex, space-around, center, row, wrap);
-        .lista2{
-            .listaGrupo{
-                margin: 20px;
-                border: solid 4px;
-                border-radius: 2em;
-                padding: 30px;
-                list-style-type: disclosure-closed;
-                .beneficios{
-                    line-height: 250%;
-                    font-size: 130%;
-                    color: nth($colores , 4);
+        .listaDeAbajo{
+            padding: 30px;
+            @include flex (flex, space-evenly, center, row, wrap);
+            .lista2{
+                .listaGrupo{
+                    margin: 20px;
+                    border: solid 4px;
+                    color: nth($colores , 1);
+                    border-radius: 2em;
+                    padding: 30px;
+                    list-style-type: disclosure-closed;
+                    .beneficios{
+                        line-height: 250%;
+                        font-size: 130%;
+                        color: nth($colores , 4);
+                    }
                 }
             }
         }
@@ -69,15 +86,22 @@
 /* MAMAS FELICES*/
 
 .mamasFelices{
-    background-image: url(../img/muchas-estrellas.svg);
-    background-size: cover;
-    .mamasFelicesh3{
-        color: nth($colores , 4);
+    @extend %flex;
+    .tituloh3{
+        color: #090909;
+        margin: 60px;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 0.5em;
+        background: #e8e8e8;
+        border: 1px solid #e8e8e8;
+        transition: all .3s;
+        box-shadow: 6px 6px 12px #c5c5c5,-6px -6px 12px #ffffff;
+        text-align: $centrar-txt;
         font-size: 3em;
         font-family: JanuariB;
         letter-spacing: 8px;
-        padding: 30px;
-        text-align: $centrar-txt;
+        color: nth($colores , 4);
     }
     .lindosMensajes{
         @include flex (flex, center, center, row, wrap);
@@ -86,7 +110,7 @@
             height: 450px;
             margin: 30px;
             border-radius: 20px;
-            background: #08070c;
+            background: #fff5c2;
             box-shadow: 0 8px 32px 0 #FCF6BD;
             border: 1px solid;
             @include flex (flex, space-evenly, center, column, wrap);
@@ -96,7 +120,7 @@
                 transform: translate(0px,5px);
             }
             p{
-                color: pink;
+                color: nth($colores , 4);
                 font-family: georgia, serif;
                 font-size: 20px;
                 font-style: italic;
